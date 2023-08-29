@@ -217,7 +217,7 @@
               <div class="hire">
                 <h2>You want us to do</h2>
                 <!-- checkout formspree.io for easy form setup -->
-                <form class="work-request">
+                <form class="work-request" >
                   <div class="work-request--options">
                     <span class="options-a">
                       <input id="opt-1" type="checkbox" value="app design">
@@ -298,24 +298,28 @@
                   </div>
                   <div class="work-request--information">
                     <div class="information-name">
-                      <input id="name" type="text" spellcheck="false">
+                      <input id="name" type="text" spellcheck="false" name="name">
                       <label for="name">Name</label>
                     </div>
                     <div class="information-email">
-                      <input id="email" type="email" spellcheck="false">
+                      <input id="email" type="email" spellcheck="false" name="email">
                       <label for="email">Email</label>
                     </div>
 
                   </div>
-                  <div class="work-request--information" style="justify-content: center;">
+                  <div class="work-request--information" >
                     <div class="information-name">
-                      <input id="name" type="text" spellcheck="false">
-                      <label for="Message">Message</label>
+                      <input id="number" type="text" spellcheck="false" name="number">
+                      <label for="number">Phone</label>
                     </div>
-                  
-
+                    <div class="information-email">
+                      <input id="msg" type="text" spellcheck="false" name="msg">
+                      <label for="msg">Message</label>
+                    </div>
+                    
                   </div>
-                  <input type="submit" value="Send Request">
+                  <input id="fetchData" type="submit" value="Send Request">
+                 
                 </form>
               </div>
             </li>
@@ -335,6 +339,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
   <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
   <script src="assets/js/functions-min.js"></script>
+  <script src="./assets/js/send.mail.js"></script>
 </body>
 
-  </html>
+</html>
