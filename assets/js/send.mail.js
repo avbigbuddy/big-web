@@ -28,8 +28,3 @@ document.getElementById("fetchData").addEventListener("click", () => {
 });
 
 
-
-function redirectToExample() {
-    // Change the URL to the desired destination
-    window.location.href = 'https://www.example.com';
-  }
