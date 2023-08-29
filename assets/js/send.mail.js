@@ -10,7 +10,7 @@ document.getElementById("fetchData").addEventListener("click", () => {
         email: email,
         msg: msg
     };
-
+    
     fetch("http://127.0.0.1:4448/send/mail", {
         method: "POST",
         headers: {
@@ -20,7 +20,7 @@ document.getElementById("fetchData").addEventListener("click", () => {
     })
     .then(response => response.json())
     .then(data => {
-        document.getElementById("response").textContent = JSON.stringify(data, null, 2);
+       
     })
     .catch(error => {
         console.log(error)
@@ -28,3 +28,8 @@ document.getElementById("fetchData").addEventListener("click", () => {
 });
 
 
+
+function redirectToExample() {
+    // Change the URL to the desired destination
+    window.location.href = 'https://www.example.com';
+  }

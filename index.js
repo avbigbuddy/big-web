@@ -7,6 +7,9 @@ app.use(express.static(__dirname));
 app.get("/", (req, res) => {
     res.sendFile(__dirname + "/app.html")
 })
+app.get("/thanku", (req, res) => {
+    res.sendFile(__dirname + "/thanku.html")
+})
 
 app.post("/send/mail", (req, res) => {
      var template = `<h1> ${req.body.name}</h1>
@@ -34,12 +37,11 @@ app.post("/send/mail", (req, res) => {
       };
       transporter.sendMail(mailOptions, (error, info) => {
            
-        if (error){ return res.send({errr:error})}else{
-            res.json({
-                message: "Mail Send",
-                
-                status : 200
-            })
+        if (error){ 
+            return res.send({errr:error})
+        }else{
+
+            return res.redirect('/thanku')
         }
         
       });   
