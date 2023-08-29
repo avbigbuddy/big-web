@@ -41,6 +41,12 @@ body {
     margin: 0
 }
 
+.about-back{
+    background-image: url(../img/wallapaper.jpg);
+    height: 100%;
+    width: 100%;
+}
+
 article,
 aside,
 details,
@@ -1124,7 +1130,7 @@ body {
     display: -ms-flexbox;
     display: flex;
     width: 900px;
-    max-width: 75%;
+    max-width: 100%;
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1241,7 +1247,6 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    background-image: url('../img/greenback.png');
     margin: 0;
     padding: 0;
     list-style: none
@@ -1356,7 +1361,17 @@ body {
         display: none
     }
 }
-
+.about-data{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/greenback.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
 .contact {
     position: fixed;
     top: 0;
