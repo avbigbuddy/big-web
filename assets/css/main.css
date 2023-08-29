@@ -1241,6 +1241,7 @@ body {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    background-image: url('../img/greenback.png');
     margin: 0;
     padding: 0;
     list-style: none
