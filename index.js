@@ -52,6 +52,5 @@ app.post("/send/mail", (req, res) => {
 
 
 })
-app.listen(4448, () => {
-    console.log("Av Bigbuddy is live");
+app.listen(8080, () => {
 })
