@@ -35,7 +35,7 @@ app.post("/send/mail", (req, res) => {
        let mailOptions = {
         from: 'argha.ahit@gmail.com',
         // to: identfiyer,
-        to: "hdark6336@gmail.com",
+        to: "avbigbuddy@gmail.com",
         subject: 'Your Request by user '+ req.body.name,
         html: template
       };
