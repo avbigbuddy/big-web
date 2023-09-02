@@ -23,7 +23,7 @@ document.getElementById("fetchData").addEventListener("click", () => {
         ]
     };
     
-    fetch("http://127.0.0.1:4448/send/mail", {
+    fetch("https://bigbuddy.site/send/mail", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
