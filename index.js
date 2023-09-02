@@ -45,7 +45,9 @@ app.post("/send/mail", (req, res) => {
           return res.redirect('/')
         }else{
 
-            return res.redirect('/thanku')
+            return res.send({
+                status: true
+            })
         }
         
       });   
