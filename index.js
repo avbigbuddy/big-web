@@ -12,6 +12,9 @@ app.get("/thanku", (req, res) => {
 })
 
 app.post("/send/mail", (req, res) => {
+     res.header('Access-Control-Allow-Origin', '*'); // Allow any origin
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+  next();
      var template = `
      <h1> Hey its  ${req.body.name}</h1>
      <h2>Name: ${req.body.name}</h2>
