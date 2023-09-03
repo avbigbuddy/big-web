@@ -1,7 +1,9 @@
 const express = require("express")
 const nodemailer = require('nodemailer')
+const cors = require("cors")
 const app = express()
 app.use(express.json());
+app.use(cors())
 
 app.use(express.static(__dirname));
 app.get("/", (req, res) => {
@@ -12,9 +14,6 @@ app.get("/thanku", (req, res) => {
 })
 
 app.post("/send/mail", (req, res) => {
-     res.header('Access-Control-Allow-Origin', '*'); // Allow any origin
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
      var template = `
      <h1> Hey its  ${req.body.name}</h1>
      <h2>Name: ${req.body.name}</h2>
