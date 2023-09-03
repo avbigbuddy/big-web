@@ -1,9 +1,9 @@
 const express = require("express")
 const nodemailer = require('nodemailer')
-const cors = require("cors")
+//const cors = require("cors")
 const app = express()
 app.use(express.json());
-app.use(cors())
+//app.use(cors())
 
 app.use(express.static(__dirname));
 app.get("/", (req, res) => {
