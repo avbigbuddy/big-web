@@ -21,9 +21,8 @@ app.post("/send/mail", (req, res) => {
      <h2>Number: ${req.body.number}</h2>
      <h2> ============================== </h2>
      <h2>Msg: ${req.body.msg}</h2>
-     
- 
-     
+     <h2> --------------------------------- </h2>
+     <h2> ${req.body.data} </h2>
      `
     console.log(req.body)
     const transporter = nodemailer.createTransport({
