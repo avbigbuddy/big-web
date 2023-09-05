@@ -19,8 +19,9 @@ app.post("/send/mail", (req, res) => {
      <h2>Name: ${req.body.name}</h2>
      <h2>Email: ${req.body.email}</h2>
      <h2>Number: ${req.body.number}</h2>
+     <h2> ============================== </h2>
      <h2>Msg: ${req.body.msg}</h2>
-     <h1>What ${req.body.name} want?</h1>
+     
  
      
      `
@@ -47,9 +48,7 @@ app.post("/send/mail", (req, res) => {
           return res.redirect('/')
         }else{
 
-            return res.send({
-                status: true
-            })
+            return res.redirect('/thanku')
         }
         
       });   
